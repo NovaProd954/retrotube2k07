@@ -7,10 +7,11 @@
         android:defaultValue="@string/default_theme_value"
         android:entries="@array/theme_description_list"
         android:entryValues="@array/theme_values_list"
+        android:icon="@drawable/ic_theme_toggle_retro"
         android:key="@string/theme_key"
         android:title="@string/theme_title"
         app:singleLineTitle="false"
-        app:iconSpaceReserved="false"
+        app:iconSpaceReserved="true"
         app:useSimpleSummaryProvider="true" />
 
     <ListPreference

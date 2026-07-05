@@ -113,9 +113,8 @@
                         android:focusable="true"
                         android:padding="@dimen/player_main_buttons_padding"
                         android:scaleType="fitXY"
-                        android:src="@drawable/ic_close"
+                        android:src="@drawable/ic_stop_retro"
                         android:visibility="gone"
-                        app:tint="@color/white"
                         tools:ignore="RtlHardcoded" />
 
                     <LinearLayout
@@ -362,8 +361,7 @@
                         android:focusable="true"
                         android:padding="@dimen/player_main_buttons_padding"
                         android:scaleType="fitXY"
-                        android:src="@drawable/ic_share"
-                        app:tint="@color/white"
+                        android:src="@drawable/ic_share_retro"
                         tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.AppCompatImageButton
@@ -541,8 +539,8 @@
                 android:contentDescription="@string/previous_stream"
                 android:focusable="true"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_previous"
-                app:tint="@color/white" />
+                android:scaleX="-1"
+                android:src="@drawable/ic_next_retro" />
 
 
             <androidx.appcompat.widget.AppCompatImageButton
@@ -553,8 +551,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/pause"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_pause"
-                app:tint="@color/white" />
+                android:src="@drawable/ic_pause_retro" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/playNextButton"
@@ -567,8 +564,7 @@
                 android:contentDescription="@string/next_stream"
                 android:focusable="true"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_next"
-                app:tint="@color/white" />
+                android:src="@drawable/ic_next_retro" />
 
         </LinearLayout>
 

@@ -773,11 +773,11 @@ public abstract class VideoPlayerUi extends PlayerUi implements SeekBar.OnSeekBa
         switch (action) {
             case PLAY:
                 button.setContentDescription(context.getString(R.string.play));
-                button.setImageResource(R.drawable.ic_play_arrow);
+                button.setImageResource(R.drawable.ic_play_retro);
                 break;
             case PAUSE:
                 button.setContentDescription(context.getString(R.string.pause));
-                button.setImageResource(R.drawable.ic_pause);
+                button.setImageResource(R.drawable.ic_pause_retro);
                 break;
             case REPLAY:
                 button.setContentDescription(context.getString(R.string.replay));

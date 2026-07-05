@@ -1,0 +1,80 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+
+    <!-- Circular badge base -->
+    <path
+        android:pathData="M 20,3 A 17,17 0 1,1 19.99,3 Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="1.5">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="20" android:startY="3"
+                android:endX="20" android:endY="37"
+                android:startColor="#737373"
+                android:centerColor="#333333"
+                android:centerY="0.5"
+                android:endColor="#141414" />
+        </aapt:attr>
+    </path>
+
+    <!-- Glossy top highlight -->
+    <path
+        android:pathData="M 5,17 A 15,15 0 0,1 35,17 A 15,7 0 0,1 5,17 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="20" android:startY="4"
+                android:endX="20" android:endY="17"
+                android:startColor="#80FFFFFF"
+                android:endColor="#0DFFFFFF" />
+        </aapt:attr>
+    </path>
+
+    <!-- Left half: sun (gold), clipped to left semicircle -->
+    <group>
+        <clip-path android:pathData="M 20,6 A 14,14 0 0,0 20,34 Z" />
+        <path android:pathData="M 12,20 A 8,8 0 1,1 12.01,20 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="4" android:startY="12"
+                    android:endX="4" android:endY="28"
+                    android:startColor="#FFE066"
+                    android:endColor="#E6B800" />
+            </aapt:attr>
+        </path>
+        <path
+            android:pathData="M 12,7 L 13,10.5 L 11,10.5 Z M 12,33 L 13,29.5 L 11,29.5 Z M -1,20 L 2.5,19 L 2.5,21 Z M 25,20 L 21.5,19 L 21.5,21 Z M 3.5,11.5 L 6.5,13.5 L 5,15 Z M 3.5,28.5 L 6.5,26.5 L 5,25 Z M 20.5,11.5 L 17.5,13.5 L 19,15 Z M 20.5,28.5 L 17.5,26.5 L 19,25 Z"
+            android:fillColor="#FFCC33" />
+    </group>
+
+    <!-- Right half: moon (silver crescent), clipped to right semicircle -->
+    <group>
+        <clip-path android:pathData="M 20,6 A 14,14 0 0,1 20,34 Z" />
+        <path android:pathData="M 20,6 A 14,14 0 0,1 20,34 Z" android:fillColor="#1B2A3A" />
+        <path android:pathData="M 30,20 A 8,8 0 1,1 30.01,20 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="22" android:startY="12"
+                    android:endX="22" android:endY="28"
+                    android:startColor="#FFFFFF"
+                    android:endColor="#9AA5B1" />
+            </aapt:attr>
+        </path>
+        <path
+            android:pathData="M 33,15 A 6,6 0 1,0 33,25 A 5,5 0 1,1 33,15 Z"
+            android:fillColor="#1B2A3A" />
+        <!-- stars -->
+        <path android:pathData="M 24,10 L 24.6,11.2 L 25.8,11.2 L 24.8,12 L 25.2,13.2 L 24,12.5 L 22.8,13.2 L 23.2,12 L 22.2,11.2 L 23.4,11.2 Z" android:fillColor="#FFFFFF" />
+        <path android:pathData="M 24,28 L 24.5,29 L 25.5,29 L 24.7,29.6 L 25,30.6 L 24,30 L 23,30.6 L 23.3,29.6 L 22.5,29 L 23.5,29 Z" android:fillColor="#FFFFFF" />
+    </group>
+
+    <!-- Divider line down the middle -->
+    <path android:pathData="M 20,6 L 20,34" android:strokeColor="#000000" android:strokeWidth="1" android:strokeAlpha="0.4" />
+</vector>

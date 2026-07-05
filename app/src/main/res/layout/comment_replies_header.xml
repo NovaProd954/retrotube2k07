@@ -57,7 +57,7 @@
         android:layout_height="21sp"
         android:layout_marginEnd="@dimen/video_item_detail_like_margin"
         android:contentDescription="@string/detail_likes_img_view_description"
-        android:src="@drawable/ic_thumb_up"
+        android:src="@drawable/ic_thumb_up_retro"
         app:layout_constraintBottom_toBottomOf="@+id/uploadDate"
         app:layout_constraintEnd_toStartOf="@+id/thumbsUpCount"
         app:layout_constraintTop_toTopOf="@+id/authorName" />

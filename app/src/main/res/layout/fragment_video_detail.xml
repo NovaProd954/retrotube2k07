@@ -340,7 +340,7 @@
                                 android:layout_height="@dimen/video_item_detail_like_image_height"
                                 android:layout_below="@id/detail_view_count_view"
                                 android:contentDescription="@string/detail_likes_img_view_description"
-                                android:src="@drawable/ic_thumb_up" />
+                                android:src="@drawable/ic_thumb_up_retro" />
 
                             <org.schabi.newpipe.views.NewPipeTextView
                                 android:id="@+id/detail_thumbs_up_count_view"
@@ -364,7 +364,7 @@
                                 android:layout_marginLeft="12dp"
                                 android:layout_toRightOf="@id/detail_thumbs_up_count_view"
                                 android:contentDescription="@string/detail_dislikes_img_view_description"
-                                android:src="@drawable/ic_thumb_down"
+                                android:src="@drawable/ic_thumb_down_retro"
                                 tools:ignore="RtlHardcoded" />
 
                             <org.schabi.newpipe.views.NewPipeTextView
@@ -493,7 +493,7 @@
                             android:background="?attr/selectableItemBackgroundBorderless"
                             android:clickable="true"
                             android:contentDescription="@string/share"
-                            android:drawableTop="@drawable/ic_share"
+                            android:drawableTop="@drawable/ic_share_retro"
                             android:focusable="true"
                             android:gravity="center"
                             android:paddingVertical="@dimen/detail_control_padding"

@@ -63,7 +63,7 @@
         android:layout_alignBottom="@+id/replies_button"
         android:layout_toEndOf="@+id/itemThumbnailView"
         android:contentDescription="@string/detail_likes_img_view_description"
-        android:src="@drawable/ic_thumb_up" />
+        android:src="@drawable/ic_thumb_up_retro" />
 
     <org.schabi.newpipe.views.NewPipeTextView
         android:id="@+id/detail_thumbs_up_count_view"

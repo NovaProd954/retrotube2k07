@@ -32,32 +32,53 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:gravity="center"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             tools:ignore="UseCompoundDrawables">
 
-            <ImageView
-                android:layout_width="@dimen/drawer_header_newpipe_icon_size"
-                android:layout_height="@dimen/drawer_header_newpipe_icon_size"
-                android:layout_marginEnd="@dimen/drawer_header_newpipe_icon_title_space"
-                android:src="@drawable/splash_foreground"
-                tools:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <org.schabi.newpipe.views.NewPipeTextView
+                    android:id="@+id/drawer_header_newpipe_title"
+                    android:layout_width="@dimen/drawer_header_newpipe_title_default_width"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="end|center_vertical"
+                    android:hyphenationFrequency="full"
+                    android:maxLines="1"
+                    android:text="Retro"
+                    android:textColor="@color/drawer_header_font_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="@dimen/drawer_header_newpipe_title_max_text_size"
+                    app:autoSizeMinTextSize="@dimen/drawer_header_newpipe_title_min_text_size"
+                    app:autoSizeTextType="uniform"
+                    tools:ignore="UnusedAttribute" />
+
+                <org.schabi.newpipe.views.NewPipeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/retrotube_logo_chip_bg"
+                    android:text="Tube"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
 
             <org.schabi.newpipe.views.NewPipeTextView
-                android:id="@+id/drawer_header_newpipe_title"
-                android:layout_width="@dimen/drawer_header_newpipe_title_default_width"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/drawer_header_newpipe_icon_title_space"
-                android:ellipsize="end"
-                android:gravity="start|center_vertical"
-                android:hyphenationFrequency="full"
-                android:maxLines="1"
-                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:alpha="0.75"
+                android:text="@string/retrotube_slogan"
                 android:textColor="@color/drawer_header_font_color"
-                android:textStyle="bold"
-                app:autoSizeMaxTextSize="@dimen/drawer_header_newpipe_title_max_text_size"
-                app:autoSizeMinTextSize="@dimen/drawer_header_newpipe_title_min_text_size"
-                app:autoSizeTextType="uniform"
-                tools:ignore="UnusedAttribute" />
+                android:textSize="11sp"
+                android:textStyle="italic" />
         </LinearLayout>
 
         <LinearLayout
