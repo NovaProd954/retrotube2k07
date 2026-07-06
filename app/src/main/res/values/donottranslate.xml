@@ -28,4 +28,5 @@
     <string name="leakcanary">LeakCanary</string>
     <string name="caption_file_name">%1$s-%2$s</string>
     <string name="retrotube_slogan">Parsed, not API\'d</string>
+    <string name="retrotube_toggle_theme">Toggle light/dark theme</string>
 </resources>
