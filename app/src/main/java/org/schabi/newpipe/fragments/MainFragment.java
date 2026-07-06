@@ -177,6 +177,17 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
                 ErrorUtil.showUiErrorSnackbar(this, "Opening search fragment", e);
             }
             return true;
+        } else if (item.getItemId() == R.id.action_toggle_theme) {
+            final SharedPreferences prefs =
+                    PreferenceManager.getDefaultSharedPreferences(activity);
+            final boolean isLight = ThemeHelper.isLightThemeSelected(activity);
+            prefs.edit()
+                    .putString(getString(R.string.theme_key),
+                            getString(isLight ? R.string.dark_theme_key
+                                    : R.string.light_theme_key))
+                    .apply();
+            activity.recreate();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

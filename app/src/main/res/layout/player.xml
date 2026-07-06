@@ -474,6 +474,8 @@
                     android:layout_marginTop="2dp"
                     android:layout_weight="1"
                     android:nextFocusDown="@id/screenRotationButton"
+                    android:progressDrawable="@drawable/seekbar_progress_retro"
+                    android:thumb="@drawable/seekbar_thumb_retro"
                     tools:progress="25"
                     tools:secondaryProgress="50" />
 

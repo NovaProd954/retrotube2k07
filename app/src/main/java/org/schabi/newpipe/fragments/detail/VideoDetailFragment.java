@@ -901,7 +901,7 @@ public final class VideoDetailFragment
         if (shouldShowComments()) {
             pageAdapter.addFragment(
                     CommentsFragment.getInstance(serviceId, url, title), COMMENTS_TAB_TAG);
-            tabIcons.add(R.drawable.ic_comment);
+            tabIcons.add(R.drawable.ic_comment_retro);
             tabContentDescriptions.add(R.string.comments_tab_description);
         }
 
