@@ -8,11 +8,4 @@
         android:orderInCategory="1"
         android:title="@string/search"
         app:showAsAction="always" />
-
-    <item
-        android:id="@+id/action_toggle_theme"
-        android:icon="@drawable/ic_theme_toggle_retro"
-        android:orderInCategory="2"
-        android:title="Toggle light/dark theme"
-        app:showAsAction="always" />
 </menu>
