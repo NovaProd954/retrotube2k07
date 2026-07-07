@@ -177,26 +177,8 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
                 ErrorUtil.showUiErrorSnackbar(this, "Opening search fragment", e);
             }
             return true;
-        } else if (item.getItemId() == R.id.action_toggle_theme) {
-            toggleAppTheme();
-            return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void toggleAppTheme() {
-        final boolean isLight = ThemeHelper.isLightThemeSelected(activity);
-        final String newThemeValue;
-        if (isLight) {
-            newThemeValue = getString(R.string.dark_theme_key);
-        } else {
-            newThemeValue = getString(R.string.light_theme_key);
-        }
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(activity);
-        final SharedPreferences.Editor editor = prefs.edit();
-        editor.putString(getString(R.string.theme_key), newThemeValue);
-        editor.apply();
-        activity.recreate();
     }
 
     /*//////////////////////////////////////////////////////////////////////////
