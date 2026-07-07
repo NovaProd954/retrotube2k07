@@ -11,7 +11,7 @@
 
     <item
         android:id="@+id/action_toggle_theme"
-        android:icon="@drawable/ic_brightness_medium"
+        android:icon="@drawable/ic_theme_toggle_retro"
         android:orderInCategory="2"
         android:title="@string/retrotube_toggle_theme"
         app:showAsAction="always" />
